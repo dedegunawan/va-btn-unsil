@@ -40,44 +40,45 @@ $update_request = $request;
 $response = $api->create($request);
 var_dump($response->getAll());
 
-// inquiry Api
-$request = new \DedeGunawan\VaBtnUnsil\Request([
-    'ref' => rand(11, 99).time(),
-    'va' => $va
-]);
-$response = $api->inquiry($request);
-var_dump($response->getAll());
-
-
-// update Api
-$update_request['description'] = "Update Nominal";
-$update_request['tagihan'] = 50000;
-$response = $api->update($update_request);
-var_dump($response->getAll());
-
-// inquiry Api
-$request = new \DedeGunawan\VaBtnUnsil\Request([
-    'ref' => rand(11, 99).time(),
-    'va' => $va
-]);
-$response = $api->inquiry($request);
-var_dump($response->getAll());
-
-
-// delete Api
-$request = new \DedeGunawan\VaBtnUnsil\Request([
-    'ref' => rand(11, 99).time(),
-    'va' => $va
-]);
-$response = $api->delete($request);
-var_dump($response->getAll());
-
-
-// inquiry Api
-$request = new \DedeGunawan\VaBtnUnsil\Request([
-    'ref' => rand(11, 99).time(),
-    'va' => $va
-]);
-$response = $api->inquiry($request);
-var_dump($response->getAll());
+//
+//// inquiry Api
+//$request = new \DedeGunawan\VaBtnUnsil\Request([
+//    'ref' => rand(11, 99).time(),
+//    'va' => $va
+//]);
+//$response = $api->inquiry($request);
+//var_dump($response->getAll());
+//
+//
+//// update Api
+//$update_request['description'] = "Update Nominal";
+//$update_request['tagihan'] = 50000;
+//$response = $api->update($update_request);
+//var_dump($response->getAll());
+//
+//// inquiry Api
+//$request = new \DedeGunawan\VaBtnUnsil\Request([
+//    'ref' => rand(11, 99).time(),
+//    'va' => $va
+//]);
+//$response = $api->inquiry($request);
+//var_dump($response->getAll());
+//
+//
+//// delete Api
+//$request = new \DedeGunawan\VaBtnUnsil\Request([
+//    'ref' => rand(11, 99).time(),
+//    'va' => $va
+//]);
+//$response = $api->delete($request);
+//var_dump($response->getAll());
+//
+//
+//// inquiry Api
+//$request = new \DedeGunawan\VaBtnUnsil\Request([
+//    'ref' => rand(11, 99).time(),
+//    'va' => $va
+//]);
+//$response = $api->inquiry($request);
+//var_dump($response->getAll());
 

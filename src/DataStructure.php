@@ -204,6 +204,17 @@ class DataStructure implements \JsonSerializable, \ArrayAccess, \IteratorAggrega
 
     /**
      * @param array $keys
+     */
+    public function except(array $keys) {
+        $column_names = array_keys($this->getColumns());
+        foreach ($column_names as $column_name) {
+            if (in_array($column_name, $keys) && $this->hasColumn($column_name))
+                $this->removeColumn($column_name);
+        }
+    }
+
+    /**
+     * @param array $keys
      * @return bool
      */
     public function mustExists(array $keys) {
